@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jessicahuynh19/devAnimation/issues"
   },
-  "homepage": "https://github.com/jessicahuynh19/devAnimation#readme"
+  "homepage": "https://github.com/jessicahuynh19/devAnimation#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1"
+  }
 }
