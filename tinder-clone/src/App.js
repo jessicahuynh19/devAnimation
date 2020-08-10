@@ -17,7 +17,7 @@ function App() {
            <h1>I am the chat</h1>
          </Route>
          
-         <Route path="/">
+         <Route path="/">   
            <TinderCards />
          </Route>
        </Switch>
