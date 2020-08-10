@@ -18,6 +18,8 @@
   "homepage": "https://github.com/jessicahuynh19/devAnimation#readme",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1"
+    "@material-ui/icons": "^4.9.1",
+    "react-router-dom": "^5.2.0",
+    "react-tinder-card": "^1.2.0"
   }
 }
