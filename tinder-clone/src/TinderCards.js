@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import TinderCard from 'react-tinder-card';
+import database from './firebase';
 import './TinderCards.css';
 
 function TinderCards() {
-    const [people, setPeople] = useState([
-        {
-            name: 'marshmello',
-            url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTEYcbhrtRoUbebD8t_10NYt3NkyoD4LJRwEQ&usqp=CAU'
-        },    
+    const [people, setPeople] = useState([]);
 
-        {
-            name: 'Dillion Francis',
-            url: 'https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2014/05/06235520/fNl7lJh0RhexB8Zf4uM9JWmZYhVdc9KTVwbDJtdy-972x597.jpeg'
-        }
-    ]);
-    
+
+    useEffect(() => {
+
+
+        database.collection('people').onSnapshot((snapshot) => 
+            setPeople(snapshot.docs.map((doc) => doc.data()))
+        );
+    }, []);
     
     return (
         <div>
