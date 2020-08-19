@@ -25,3 +25,11 @@
     color: white;
 }
 
+.chatScreen_input {
+    display: flex;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1 px solid lightgray;
+}
