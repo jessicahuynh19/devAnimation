@@ -33,3 +33,17 @@
     width: 100%;
     border-top: 1 px solid lightgray;
 }
+
+.chatScreen_inputField {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.chatScreen_inputButton {
+    border: none;
+    margin-right: 20px;
+    background-color: white;
+    font-weight: bold;
+    color: #fe3d71;
+}
